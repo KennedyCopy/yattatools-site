@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - YattaTools (YT)</title>
+    <meta name="description" content="Learn about YattaTools (YT) - our mission to provide high-quality, affordable hardware tools for DIYers and professionals.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.8; color: #333; background: #f4f4f4; }
+        a { text-decoration: none; color: inherit; }
+        :root { --primary: #ff6600; --dark: #222; --light: #fff; }
+        header { background: var(--dark); color: var(--light); padding: 1rem; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .logo { font-size: 1.8rem; font-weight: bold; }
+        .logo span { color: var(--primary); }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 2rem; }
+        nav ul li a { font-weight: bold; transition: color 0.3s; }
+        nav ul li a:hover, nav ul li a.active { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
+        main { padding: 6rem 2rem 4rem; max-width: 1000px; margin: 0 auto; }
+        h1 { text-align: center; font-size: 2.8rem; margin-bottom: 2rem; color: var(--dark); }
+        .about-content { background: var(--light); padding: 3rem; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin-bottom: 3rem; }
+        .about-content p { font-size: 1.1rem; margin-bottom: 1.5rem; }
+        .mission { text-align: center; font-style: italic; font-size: 1.3rem; color: #555; margin: 3rem 0; }
+        .team-image { text-align: center; margin: 3rem 0; }
+        .team-image img { border-radius: 12px; max-width: 100%; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        footer { background: var(--dark); color: var(--light); text-align: center; padding: 2rem; margin-top: 4rem; }
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            nav ul { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--dark); }
+            nav ul.active { display: flex; }
+            nav ul li { margin: 1rem 0; text-align: center; }
+            h1 { font-size: 2.3rem; }
+            .about-content { padding: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Yatta<span>Tools</span> (YT)</div>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>About YattaTools (YT)</h1>
+
+        <div class="about-content">
+            <p>YattaTools (YT) was born from a simple idea: great tools shouldn't be expensive or hard to find.</p>
+            <p>We started as a small team of hardware enthusiasts who were tired of overpriced, low-quality options in the market. After years of testing tools on real job sites and home projects, we decided to build something better — a brand focused on durability, performance, and fair pricing.</p>
+            <p>Today, YattaTools brings professional-grade power tools, hand tools, and accessories directly to DIYers, contractors, and hobbyists like you.</p>
+        </div>
+
+        <p class="mission">Our mission: Empower every builder with reliable tools that get the job done right — without breaking the bank.</p>
+
+        <div class="team-image">
+            <img src="https://images.unsplash.com/photo-1581092160607-36f3a7514075?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="YattaTools team working with tools">
+        </div>
+
+        <div class="about-content">
+            <p>We stand behind every product we sell. That’s why we offer fast shipping, easy returns, and real customer support from people who actually use tools.</p>
+            <p>Thank you for choosing YattaTools. Let’s build something great together.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 YattaTools (YT). All rights reserved.</p>
+        <p>Email: info@yattatools.com | Phone: (123) 456-7890</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.get.getElementById('nav-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+  </html>
